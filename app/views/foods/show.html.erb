@@ -1,0 +1,22 @@
+<center>
+<div id="food_list">
+<table>
+<tr class="list_line">
+    <td><div><%= image_tag(@food.img_url,:class => "list_image") %></div></td>
+    <td class = "list_description">
+      <dl>
+        <dt><%= link_to @food.name, @food %></dt>
+        <dd>Price : $<%=  @food.price %>
+        <br/><%= @food.desc %></dd><br/>
+      </dl>
+    </td>
+    <td class="feedback">
+    <b>Feedback</b><br/>
+    Price:<div id="back"><div id="onback" style="width: <%= 120+rand(80) %>px"></div></div>
+    Quality:<div id="back"><div id="onback" style="width: <%= 120+rand(80) %>px"></div></div>
+    Frequence:<div id="back"><div id="onback" style="width: <%= 120+rand(80) %>px"></div></div>
+    </td>
+    </tr>
+</table>
+</div>
+</center>

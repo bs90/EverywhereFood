@@ -1,0 +1,23 @@
+<div id="food_list">
+<h1 style="text-align:center; color:green;">FOOD CATALOGUE</h1>
+<table>
+<% @foods.each do |food| %>
+    <tr class="list_line">
+    <td><div id="foodimg"><%= image_tag(food.img_url,:class => "list_image") %></div></td>
+    <td class = "list_description">
+      <dl>
+        <dt><%= link_to food.name, food %></dt>
+        <dd><b>Price</b> : $<%= food.price %><br/><%= truncate(food.desc, :length => 100) %>  <%= link_to 'Show detail', food %>  <%= link_to 'Edit food', edit_food_path(food) %>  <%= link_to 'Delete food', food, method: :delete, data: { confirm: 'Are you sure?' } %></dd>
+      </dl>
+    </td>
+    <td class="feedback">
+    <b>Feedback</b><br/>
+    Price:<div id="back"><div id="onback" style="width: <%= 120+rand(80) %>px"></div></div>
+    Quality:<div id="back"><div id="onback" style="width: <%= 120+rand(80) %>px"></div></div>
+    </td>
+    </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New Food', new_food_path %>
+</div>

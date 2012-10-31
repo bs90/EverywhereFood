@@ -1,0 +1,31 @@
+<div class="depot_form"> 
+	<% if flash[:alert] %>
+		<p id="notice"><%= flash[:alert] %></p> 
+	<% end %>
+
+<%= form_tag do %> 
+<center>
+<fieldset style="width :400px;">
+	<legend>LOG IN</legend>
+	<div> 
+		<label for="name">Name:</label> <%= text_field_tag :name, params[:name] %>
+	</div>
+	<div> 
+		<label for="password">Password:</label> <%= password_field_tag :password, params[:password] %>
+	</div>
+	<div>
+		<%= submit_tag "Login" %>
+	</div> 
+</fieldset>
+Please use one of two following accounts to login:<br/>
+--------------------------------------------------<br/>
+<b>Admin account:</b><br/>
+Username: admin<br/>
+Password: 123456<br/>
+--------------------------------------------------<br/>
+<b>Normal user account:</b><br/>
+Username: testuser<br/>
+Password: 123456<br/>
+</center>
+<% end %> 
+</div>

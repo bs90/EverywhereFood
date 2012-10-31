@@ -1,0 +1,10 @@
+<center>
+<% if(@user.id!=1) %>
+No permission to acess
+<% else %>
+<h1>Admin controller</h1><br/>
+<a href="/users">Users list</a><br/>
+<a href="/orders">Orders list</a><br/>
+<a href="/foods/new">Create new food</a>
+</center>
+<% end %>

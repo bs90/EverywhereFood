@@ -1,0 +1,173 @@
+body{
+  background-color: gray;
+  background-image: url("backimage.png");
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+#headbanner
+{
+	width: 1000px;
+	height: 250px;
+	margin-left: auto;
+  margin-right: auto;
+	background-image:url('headbanner.png');
+}
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#container {
+    position:relative;
+    width:100%;
+    display:table;
+    text-align:center;
+    overflow:hidden;
+}
+
+#food_list{
+	width: 700px;
+	margin-left: auto;
+  margin-right: auto;
+  display:inline-block;
+  vertical-align:middle;
+  text-align:left;
+}
+
+#food_list table {
+  border-collapse: collapse;
+}
+
+#food_list table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+#food_list .list_image {
+  border-style: solid; 
+  border-color: green;
+  width:        100px;
+  height:       100px;
+}
+
+.list_image_small {
+  border-style: solid; 
+  border-color: green;
+  width:        50px;
+  height:       50px;
+}
+
+.list_image_user_photo {
+  border-style: solid; 
+  border-color: green;
+  width:        150px;
+  height:       150px;
+}
+
+.cart_image {
+  width:        270px;
+  height:       90px;
+}
+
+#food_list .list_description {
+
+}
+
+#food_list .list_description dl {
+  margin: 0;
+}
+
+#food_list .list_description dt {
+	color:        black;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#food_list .list_description dd {
+  margin: 0;
+}
+
+#food_list .feedback { 
+}
+
+#food_list .feedback #back{
+  height: 10px;
+  width: 200px;
+  background-color: green;
+  padding: 2px;
+}
+
+#food_list .feedback #onback{
+  height: 10px;
+  background-color: white;
+}
+
+#food_list .list_line {
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+#buttons{
+  width: 350px;
+  height: 75px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttons #homebutton{
+ display: inline-block;  
+ vertical-align: middle;
+ width: 150px;
+ height: 75px; 
+ background-image: url("homebutton.png");
+}
+
+#buttons #aboutbutton{
+ display: inline-block;  
+ vertical-align: middle;
+ width: 150px;
+ height: 75px; 
+ background-image: url("aboutbutton.png");
+}
+
+.button_to {
+  display: inline;
+}
+
+/****************************************************************/
+#showcart{
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline-block;
+  vertical-align:top;
+  border-style: solid; 
+  border-color: green;
+  border-width: 1px; 
+  padding: 10px;
+}
+
+#showcart table tr td {
+  text-align: left;
+  padding: 10px;
+  vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

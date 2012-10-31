@@ -1,0 +1,18 @@
+<% if(@user.id!=1) %>
+<center>No permission to acess</center>
+<% else %>
+<center>
+<h1>Listing orders</h1>
+<table>
+<% @orders.each do |order| %>
+  <tr>
+    <td><b><%= order.name %></b></td>
+    <td><%= order.address %></td>
+    <td><%= order.email %></td>
+    <td><%= order.payment %></td>
+    <td><%= order.created_at %></td>
+  </tr>
+<% end %>
+</table>
+</center<>
+<% end %>

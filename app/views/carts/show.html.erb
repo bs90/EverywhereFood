@@ -1,0 +1,24 @@
+<center>
+<div id="showcart">
+<%= image_tag("cart.png",:class => "cart_image") %>
+<% unless @cart.line_foods.empty? %>
+<table>
+    <% @cart.line_foods.each do |line| %>
+    <tr>
+        <td><%= image_tag(line.food.img_url,:class => "list_image_small") %></td>
+        <td><b><%= line.food.name %></b>x<%= line.quantity %>
+		<br/>$<%= line.food.price %> x <%= line.quantity %> = $<%= line.food.price*line.quantity %>
+        </td><br/>
+    </tr>
+    <% end %>
+</table>
+Total price : <b>$<%= @cart.total_price %></b>
+<%= button_to "CHECKOUT", new_order_path, :method => :get %>
+<%= button_to 'EMPTY YOUR CART', @cart, :method => :delete, :confirm => 'Empty your cart?' %>
+<% else %>
+Your cart is currently EMPTY!<br/>You need foods! Please buy something!
+<% end %>
+</div>
+<br/>
+<%= link_to "Continue shoping", "/" %>
+</center>

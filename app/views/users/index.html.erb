@@ -1,0 +1,15 @@
+<% if(@user.id!=1) %>
+No permission to acess
+<% else %>
+<center>
+<table>
+<h1>Users list</h1>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= image_tag(user.img_url,:class => "list_image_user_photo") %></td>
+    <td><b><%= user.img_url %></b></td>
+  </tr>
+<% end %>
+</table>
+</center>
+<% end %>

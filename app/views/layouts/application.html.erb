@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>--= Everywhere Food =--</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="headbanner"></div>
+<div id="buttons">
+	<a href="/"><div id="homebutton"></div></a>
+	<a href="/"><div id="aboutbutton"></div></a>
+</div>
+<hr>
+<%= yield %>
+</body>
+</html>
