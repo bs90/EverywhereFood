@@ -56474,6 +56474,7 @@ Served asset /pizzabig.jpeg - 304 Not Modified (0ms)
 
 Started GET "/assets/birthdaycake.jpg" for 127.0.0.1 at 2013-04-09 08:39:46 +0700
 Served asset /birthdaycake.jpg - 304 Not Modified (0ms)
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2013-04-12 14:15:51 +0700
@@ -73590,3 +73591,5 @@ Served asset /humburgerbig.jpeg - 304 Not Modified (0ms)
 
 Started GET "/assets/birthdaycake.jpg" for 127.0.0.1 at 2013-04-13 09:14:01 +0700
 Served asset /birthdaycake.jpg - 304 Not Modified (0ms)
+=======
+>>>>>>> parent of 1b6fb5f... 12042013_1545
