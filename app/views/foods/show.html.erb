@@ -6,6 +6,8 @@
     <td class = "list_description">
       <dl>
         <dt><%= link_to @food.name, @food %></dt>
+        <%= button_to "Art to cart", line_foods_path(:food_id => @food.id)
+         %>
         <dd>Price : $<%=  @food.price %>
         <br/><%= @food.desc %></dd><br/>
       </dl>

@@ -14,6 +14,8 @@ class SessionsController < ApplicationController
 
   def destroy
   	session[:user_id] = nil
+    @cart=current_cart
+    @cart.destroy
   	redirect_to home_url
   end
 end

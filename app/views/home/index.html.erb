@@ -5,6 +5,7 @@
 <b><%= @user.name %></b><br/>
 <% if @user.id == 1 %>You are the admin <%= link_to "Admin page", admin_path%><% end %> 
 <br/><%= link_to "Logout", logout_path, :method => :delete %>
+
 <% else %>
 Not logged in. Accounts to log in:<br/>
 Username : admin Pass : 123456<br/>
@@ -23,6 +24,9 @@ Username : testuser Pass : 123456<br>
     <% end %>
 </table>
 Total price : <b>$<%= @cart.total_price %></b>
+<% if @cart.total_price > 200 %>
+<br/>YOU ARE GREAT!!!!!
+<%  end %>
 <%= button_to "CHECKOUT", new_order_path, :method => :get %>
 <%= button_to 'EMPTY YOUR CART', @cart, :method => :delete, :confirm => 'Empty your cart?' %>
 <% else %>

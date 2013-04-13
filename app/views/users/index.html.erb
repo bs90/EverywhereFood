@@ -7,7 +7,7 @@ No permission to acess
 <% @users.each do |user| %>
   <tr>
     <td><%= image_tag(user.img_url,:class => "list_image_user_photo") %></td>
-    <td><b><%= user.img_url %></b></td>
+    <td><b><%= user.name %></b></td>
   </tr>
 <% end %>
 </table>
