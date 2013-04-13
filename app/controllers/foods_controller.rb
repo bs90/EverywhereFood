@@ -34,7 +34,6 @@ class FoodsController < ApplicationController
 
   # GET /foods/1/edit
   def edit
-    @user = current_user
     @food = Food.find(params[:id])
   end
 
