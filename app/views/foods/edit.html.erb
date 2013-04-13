@@ -1,6 +1,14 @@
+<% if @user.id==1 %>
+
 <h1>Editing food</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @food %> |
 <%= link_to 'Back', foods_path %>
+	
+<% else %>
+
+BLOCKED!
+
+<% end %>
