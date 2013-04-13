@@ -1,36 +1,5 @@
 <div id="container">
 <div id="food_list" class="food_list_home">
-<div id="showcart">
-<% if(@user != nil) %>
-<%= image_tag(@user.img_url,:class => "list_image_user_photo") %><br/>
-<b><%= @user.name %></b><br/>
-<% if @user.id == 1 %>You are the admin <%= link_to "Admin page", admin_path%><% end %> 
-<br/><%= link_to "Logout", logout_path, :method => :delete %>
-<% else %>
-Not logged in. Accounts to log in:<br/>
-Username : admin Pass : 123456<br/>
-Username : testuser Pass : 123456<br>
-<%= link_to "Login here", login_path %>
-<% end %>
-<%= image_tag("cart.png",:class => "cart_image") %>
-<% unless @cart.line_foods.empty? %>
-<table>
-    <% @cart.line_foods.each do |line| %>
-    <tr>
-        <td><%= image_tag(line.food.img_url,:class => "list_image_small") %></td>
-        <td><b><%= line.food.name %></b><br/>
-        Quantity : <%= line.quantity %></td>
-    </tr>
-    <% end %>
-</table>
-Total price : <b>$<%= @cart.total_price %></b>
-<%= button_to "CHECKOUT", new_order_path, :method => :get %>
-<%= button_to 'EMPTY YOUR CART', @cart, :method => :delete, :confirm => 'Empty your cart?' %>
-<% else %>
-Your cart is currently EMPTY!<br/>You need foods! Please buy something!
-<% end %>
-</div>
-<div id="food_list">
 <table>
 <% @foods.each do |food| %>
     <tr class="list_line">
