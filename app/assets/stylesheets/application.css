@@ -26,12 +26,9 @@ body{
 	width: 700px;
 	margin-left: auto;
   margin-right: auto;
+  display:inline-block;
   vertical-align:middle;
   text-align:left;
-}
-
-.food_list_home{
-  display:inline-block;
 }
 
 #food_list table {
