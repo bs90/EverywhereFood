@@ -1,6 +1,5 @@
 <div id="food_list">
 <h1 style="text-align:center; color:green;">FOOD CATALOGUE</h1>
-<center>
 <table>
 <% @foods.each do |food| %>
     <tr class="list_line">
@@ -19,7 +18,6 @@
     </tr>
 <% end %>
 </table>
-</center>
 <br />
 <%= link_to 'New Food', new_food_path %>
 </div>
